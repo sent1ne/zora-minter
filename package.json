@@ -1,0 +1,32 @@
+{
+  "name": "zora-minter",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --no-warnings --max-old-space-size=8192 --experimental-specifier-resolution=node --loader ts-node/esm --import ./logError.js ./start.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reservoir0x/relay-sdk": "^0.4.0",
+    "axios": "^1.4.0",
+    "ccxt": "^4.3.10",
+    "https-proxy-agent": "^7.0.2",
+    "inquirer": "^9.2.11",
+    "tslog": "^4.9.2",
+    "viem": "^2.9.31"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.2.5",
+    "@types/node-fetch": "^2.6.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.3",
+    "typescript": "^5.2.2"
+  }
+}
